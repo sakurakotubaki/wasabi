@@ -14,7 +14,7 @@ cargo build --target x86_64-unknown-uefi
 バイナリを調べる。
 
 ```shell
-file target/x86_64-unknown-uefi/debug/wasabios.efi
+file target/x86_64-unknown-uefi/debug/wasabi.efi
 ```
 
 QEMU(ケム)のバージョン確認
@@ -39,7 +39,7 @@ buildした後にコピーをする場合
 
 ```shell
 mkdir -p mnt/EFI/BOOT
-cp target/x86_64-unknown-uefi/debug/wasabios.efi mnt/EFI/BOOT/BOOTX64.EFI
+cp target/x86_64-unknown-uefi/debug/wasabi.efi mnt/EFI/BOOT/BOOTX64.EFI
 ```
 
 UEFI Shell に落ちたときのために、`startup.nsh` も置く
