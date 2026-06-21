@@ -1,0 +1,13 @@
+[package]
+name = "wasabios"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+uefi = "0.20.0"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
